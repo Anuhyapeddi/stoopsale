@@ -1,0 +1,259 @@
+@font-face {
+  font-family: 'MyCustomHeading';
+  src: url('../fonts/Lemon\ Tuesday.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../fonts/GlacialIndifference-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../fonts/GlacialIndifference-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../fonts/GlacialIndifference-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  font-family: 'MyCustomFont', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .intro-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh; 
+}
+
+.invitation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  margin: 50px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.invitation video {
+  width: 100%;
+  max-width: 223px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.heading {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #503C3C 1px solid;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  box-sizing: border-box;
+} */
+
+.invitation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Center items horizontally */
+  width: 100%;
+}
+
+.invitation video {
+  width: 65%;
+  overflow: hidden;
+  object-fit: cover;
+  height: 800px;
+  border-radius: 0px;
+  margin-bottom: 100px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+
+.button-74 {
+
+  margin-top: 20px;
+  background-color: #fbeee0;
+  border: 1px solid #422800;
+  border-radius: 30px;
+  /* box-shadow: #422800 4px 4px 0 0; */
+  font-family: 'MyCustomFont';
+  src: url('../fonts/GlacialIndifference-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  margin: 0 40px;
+  margin-bottom: 40px;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 150px;
+  margin-bottom: 10px;
+  border-radius: 100px;
+}
+
+.container {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+  
+}
+
+h1 {
+  color: #333;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.music {
+  margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  .invitation {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .heading {
+    width: 100%;
+  }
+
+  .invitation video {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%;
+    max-width: none;
+    margin: 10px 0;
+  }
+
+  .button-74 {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-74 {
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  #map {
+    height: 200px;
+  }
+  #map {
+    width: 100%; /* Ensure map takes full width of its container */
+    height: 300px; /* Initial height for larger screens */
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    #map {
+      height: 200px; /* Adjust height for medium-sized screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #map {
+      height: 150px; /* Further adjust height for smaller screens */
+    }
+  }
+}
